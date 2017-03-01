@@ -27,3 +27,11 @@ function func1() {
 
 //arrow functions
 //can't use in constructors, handle "this" strangely
+//these 2 functions are the same:
+var reflect = function(value) {
+  return value
+}
+
+const reflect = value => value //one argument and return
+
+const reflect2 = (value, num) => value //2 args and return
