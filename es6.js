@@ -99,3 +99,21 @@ function func1() {
 
 // let meldedCountries = [...countries, ...otherCountries]
 // console.log('melded', meldedCountries)
+
+
+//for loop
+var arr = ['1','2','3']
+for(var i = 0, length1 = arr.length; i < length1; i++){
+  var elem = arr[i]
+  console.log('elem', elem)
+}
+
+//forEach
+arr.forEach(function (elem){
+  console.log('elem', elem)
+})
+
+//for of
+for(let [index, value] of arr) {
+  console.log('elem', elem)
+}
