@@ -25,7 +25,7 @@ function func1() {
 // MAX_CAT_SIZE.height = 20 //can add key: value pairs too
 // console.log('max cat size', MAX_CAT_SIZE)
 
-//arrow functions - great for anon functions
+/*************arrow functions - great for anon functions**************/
 //can't use in constructors, handle "this" strangely
 //these 2 functions are the same:
 // var reflect = function(value) {
@@ -40,7 +40,7 @@ function func1() {
 // //no arg
 // const reflect = () => 1+2
 
-var numbers = [1,2,3,4,5,6]
+// var numbers = [1,2,3,4,5,6]
 
 // var timesTwo = numbers.map(function(number){
 //   return number*2
@@ -60,15 +60,40 @@ var numbers = [1,2,3,4,5,6]
 // }
 
 //object literal value shorthand
-const wow = 'hi there',
-      es6 = 'ES6',
-      myNum = () => console.log('howdy')
+// const wow = 'hi there',
+//       es6 = 'ES6',
+//       myNum = () => console.log('howdy')
 
-let myOldObj = {
-  wow: wow,
-  es6: es6,
-  myNum: myNum
-}
+// let myOldObj = {
+//   wow: wow,
+//   es6: es6,
+//   myNum: myNum
+// }
 
-let myNewObj = {wow, es6, myNum}
-console.log('myNewObj', myNewObj)
+// let myNewObj = {wow, es6, myNum}
+// console.log('myNewObj', myNewObj)
+
+/**********destructuring assignments*********/
+// let dog = {
+//   name: 'Murph',
+//   breed: 'Aussie',
+//   speak: () => 'woof'
+// }
+
+// // const myDog = dog.name //old way
+
+// const {name, speak} = dog //destructuring => variable called name = dog.name, variable named speak = dog.speak
+
+// const {name: myName, speak} = dog //renames variable to myName
+
+const [a,b] = [5,10]
+console.log('a and b', a, b)
+
+let x = [1,2,3,4,5]
+let [y,z] = x
+
+let countries = ['moldova','ukraine']
+let otherCountries = ['usa', 'japan']
+
+let meldedCountries = [...countries, ...otherCountries]
+console.log('melded', meldedCountries)
