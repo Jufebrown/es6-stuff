@@ -28,10 +28,22 @@ function func1() {
 //arrow functions
 //can't use in constructors, handle "this" strangely
 //these 2 functions are the same:
-var reflect = function(value) {
-  return value
-}
+// var reflect = function(value) {
+//   return value
+// }
 
-const reflect = value => value //one argument and return
+// const reflect = value => value //one argument and return
 
-const reflect2 = (value, num) => value //2 args and return
+// //slightly different
+// const reflect2 = (value, num) => value //2 args and return
+
+// //no arg
+// const reflect = () => 1+2
+
+var numbers = [1,2,3,4,5,6]
+
+var timesTwo = numbers.map(function(number){
+  return number*2
+})
+
+console.log('timesTwo', timesTwo)
