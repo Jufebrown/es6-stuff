@@ -86,14 +86,16 @@ function func1() {
 
 // const {name: myName, speak} = dog //renames variable to myName
 
-const [a,b] = [5,10]
-console.log('a and b', a, b)
+// const [a,b] = [5,10]
+// console.log('a and b', a, b)
 
-let x = [1,2,3,4,5]
-let [y,z] = x
+// let x = [1,2,3,4,5]
+// // let [y,z, ...theOthers] = x //... - rest element has to be last in array
+// let [,,...theOthers] = x
+// console.log('theOthers', theOthers)
 
-let countries = ['moldova','ukraine']
-let otherCountries = ['usa', 'japan']
+// let countries = ['moldova','ukraine']
+// let otherCountries = ['usa', 'japan']
 
-let meldedCountries = [...countries, ...otherCountries]
-console.log('melded', meldedCountries)
+// let meldedCountries = [...countries, ...otherCountries]
+// console.log('melded', meldedCountries)
