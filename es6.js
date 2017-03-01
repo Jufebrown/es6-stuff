@@ -25,7 +25,7 @@ function func1() {
 // MAX_CAT_SIZE.height = 20 //can add key: value pairs too
 // console.log('max cat size', MAX_CAT_SIZE)
 
-//arrow functions
+//arrow functions - great for anon functions
 //can't use in constructors, handle "this" strangely
 //these 2 functions are the same:
 // var reflect = function(value) {
@@ -42,8 +42,33 @@ function func1() {
 
 var numbers = [1,2,3,4,5,6]
 
-var timesTwo = numbers.map(function(number){
-  return number*2
-})
+// var timesTwo = numbers.map(function(number){
+//   return number*2
+// })
 
-console.log('timesTwo', timesTwo)
+// let timesTwo = numbers.map((number) => number * 2)
+
+// console.log('timesTwo', timesTwo)
+
+
+/*******something random that Joe started*********/
+// function FooCtrl(FooService) {
+//   this.foo = 'hello'
+//   FooService.doSomething(function(response) {
+//     this.foo = response
+//   }).bind(this)
+// }
+
+//object literal value shorthand
+const wow = 'hi there',
+      es6 = 'ES6',
+      myNum = () => console.log('howdy')
+
+let myOldObj = {
+  wow: wow,
+  es6: es6,
+  myNum: myNum
+}
+
+let myNewObj = {wow, es6, myNum}
+console.log('myNewObj', myNewObj)
